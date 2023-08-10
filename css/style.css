@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #F0E9E0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  position: relative;
+  padding: 0rem !important;
+}
+main video {
+  outline: 1px solid #F0E9E0;
+  outline-offset: -1px;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  top: -4rem;
+  left: 0;
+  right: 0;
+  padding: 0 !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.382);
+}
+main header {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2.9rem 3.8rem;
+}
+main header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main header nav .top-logo img {
+  width: 82%;
+}
+main header nav .nav-links {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+main header nav .nav-links ul {
+  display: flex;
+  gap: 2.4rem;
+}
+main header nav .nav-links ul a {
+  position: relative;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+main header nav .nav-links ul a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  top: 1.8rem;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: 0.2s all ease-in-out;
+  transform-origin: bottom left;
+}
+main header nav .nav-links ul a:hover::after {
+  transform: scaleX(1);
+}
+main header nav .nav-links .enter-app {
+  position: relative;
+  color: #F0E9E0;
+  font-size: 0.8rem;
+  letter-spacing: -1px;
+  font-weight: 600;
+  border: 2px solid black;
+  height: 2.5rem;
+  width: 7.5rem;
+  background-color: #000;
+  border-radius: 1.3rem;
+  transition: 0.2s all ease-in-out;
+}
+main header nav .nav-links .enter-app::before {
+  content: "ENTER APP";
+  position: absolute;
+  color: transparent;
+  top: 21%;
+  left: 23%;
+  transform: translateY(-10px);
+  transition: 0.3s all ease-in-out;
+}
+main header nav .nav-links .enter-app::after {
+  content: "ENTER APP";
+  position: absolute;
+  color: #F0E9E0;
+  top: 21%;
+  left: 23%;
+  transition: 0.3s all ease-in-out;
+}
+main header nav .nav-links .enter-app:hover {
+  background-color: transparent;
+}
+main header nav .nav-links .enter-app:hover::after {
+  color: transparent;
+  transform: translateY(10px);
+}
+main header nav .nav-links .enter-app:hover::before {
+  color: #000;
+  transform: translateY(0);
+}
+main header .header-content {
+  display: flex;
+  gap: 2rem;
+  align-items: start;
+  flex-direction: column;
+}
+main header .header-content .header-heading {
+  font-size: 1.5rem;
+  letter-spacing: -1.7px;
+}
+main header .header-content .header-para {
+  max-width: 26%;
+  font-size: 0.8rem;
+}
+main header .header-content .black-btn {
+  margin-top: 1.3rem;
+  position: relative;
+  color: #F0E9E0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 2px solid black;
+  height: 2.5rem;
+  width: 10rem;
+  background-color: #000;
+  border-radius: 1.3rem;
+  transition: 0.2s all ease-in-out;
+}
+main header .header-content .black-btn::before {
+  content: "DISCOVER HOW";
+  position: absolute;
+  color: transparent;
+  top: 23%;
+  left: 18%;
+  transform: translateY(-10px);
+  transition: 0.3s all ease-in-out;
+}
+main header .header-content .black-btn::after {
+  content: "DISCOVER HOW";
+  position: absolute;
+  color: #F0E9E0;
+  top: 23%;
+  left: 18%;
+  transition: 0.3s all ease-in-out;
+}
+main header .header-content .black-btn:hover {
+  background-color: transparent;
+}
+main header .header-content .black-btn:hover::after {
+  color: transparent;
+  transform: translateY(10px);
+}
+main header .header-content .black-btn:hover::before {
+  color: #000;
+  transform: translateY(0);
+}
+
+.container {
+  padding: 2.9rem 3.8rem;
+}
+.container .sec1 {
+  background-color: #F0E9E0;
+  border: 1px solid rgba(0, 0, 0, 0.382);
+  position: relative;
+  top: 4rem;
+  border-radius: 2rem;
+  padding: 5.5rem 3.5rem;
+  padding-right: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.container .sec1 .sec1-left {
+  flex: 1;
+}
+.container .sec1 .sec1-left h1 {
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+.container .sec1 .sec1-right {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.container .sec1 .sec1-right .sec1-right-div {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.container .sec1 .sec1-right .sec1-right-div .sec1-right-con .sec1-right-heading {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.container .sec1 .sec1-right .sec1-right-div .sec1-right-con .sec1-right-content h1 {
+  font-size: 3.7rem;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */

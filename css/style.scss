@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #F0E9E0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    position: relative;
+    padding: 0rem !important;
+
+    video {
+        outline: 1px solid #F0E9E0;
+        outline-offset: -1px;
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        top: -4rem;
+        left: 0;
+        right: 0;
+        padding: 0 !important;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.382);
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 2.9rem 3.8rem;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .top-logo {
+                img {
+                    width: 82%;
+                }
+            }
+
+            .nav-links {
+                display: flex;
+                gap: 2.4rem;
+                align-items: center;
+
+                ul {
+                    display: flex;
+                    gap: 2.4rem;
+
+                    a {
+                        position: relative;
+                        font-size: .8rem;
+                        font-weight: 600;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 100%;
+                            left: 0;
+                            top: 1.8rem;
+                            background-color: #000;
+                            transform: scaleX(0);
+                            transition: .2s all ease-in-out;
+                            transform-origin: bottom left;
+                        }
+
+                        &:hover {
+                            &::after {
+                                transform: scaleX(1);
+                            }
+                        }
+                    }
+
+
+                }
+
+                .enter-app {
+                    position: relative;
+                    color: #F0E9E0;
+                    font-size: .8rem;
+                    letter-spacing: -1px;
+                    font-weight: 600;
+                    border: 2px solid black;
+                    height: 2.5rem;
+                    width: 7.5rem;
+                    background-color: #000;
+                    border-radius: 1.3rem;
+                    transition: .2s all ease-in-out;
+
+                    &::before {
+                        content: 'ENTER APP';
+                        position: absolute;
+                        color: transparent;
+                        top: 21%;
+                        left: 23%;
+                        transform: translateY(-10px);
+                        transition: .3s all ease-in-out;
+                    }
+
+                    &::after {
+                        content: 'ENTER APP';
+                        position: absolute;
+                        color: #F0E9E0;
+                        top: 21%;
+                        left: 23%;
+                        transition: .3s all ease-in-out;
+                    }
+
+                    &:hover {
+                        background-color: transparent;
+
+                        &::after {
+                            color: transparent;
+                            transform: translateY(10px);
+                        }
+
+                        &::before {
+                            color: #000;
+                            transform: translateY(0);
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .header-content {
+            display: flex;
+            gap: 2rem;
+            align-items: start;
+            flex-direction: column;
+
+            .header-heading {
+                font-size: 1.5rem;
+                letter-spacing: -1.7px;
+            }
+
+            .header-para {
+                max-width: 26%;
+                font-size: .8rem;
+            }
+
+            .black-btn {
+                margin-top: 1.3rem;
+                position: relative;
+                color: #F0E9E0;
+                font-size: .8rem;
+                font-weight: 600;
+                border: 2px solid black;
+                height: 2.5rem;
+                width: 10rem;
+                background-color: #000;
+                border-radius: 1.3rem;
+                transition: .2s all ease-in-out;
+
+                &::before {
+                    content: 'DISCOVER HOW';
+                    position: absolute;
+                    color: transparent;
+                    top: 23%;
+                    left: 18%;
+                    transform: translateY(-10px);
+                    transition: .3s all ease-in-out;
+                }
+
+                &::after {
+                    content: 'DISCOVER HOW';
+                    position: absolute;
+                    color: #F0E9E0;
+                    top: 23%;
+                    left: 18%;
+                    transition: .3s all ease-in-out;
+                }
+
+                &:hover {
+                    background-color: transparent;
+
+                    &::after {
+                        color: transparent;
+                        transform: translateY(10px);
+                    }
+
+                    &::before {
+                        color: #000;
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container {
+    padding: 2.9rem 3.8rem;
+
+    .sec1 {
+        background-color: #F0E9E0;
+        border: 1px solid rgba(0, 0, 0, 0.382);
+        position: relative;
+        top: 4rem;
+        border-radius: 2rem;
+        padding: 5.5rem 3.5rem;
+        padding-right: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        .sec1-left {
+            flex: 1;
+
+            h1 {
+                font-size: 2.3rem;
+                font-weight: 400;
+            }
+        }
+
+        .sec1-right {
+            flex: 2;
+            display: flex;
+            justify-content: space-between;
+
+
+            .sec1-right-div {
+                display: flex;
+                flex-direction: column;
+                gap: 8rem;
+
+                .sec1-right-con {
+                    .sec1-right-heading {
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                    }
+
+                    .sec1-right-content {
+                        h1 {
+                            font-size: 3.7rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
